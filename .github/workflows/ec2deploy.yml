@@ -16,7 +16,7 @@ jobs:
     - name: Setup .NET
       uses: actions/setup-dotnet@v5
       with:
-        dotnet-version: '3.1'  # Use the appropriate version for your project
+        dotnet-version: '8.0'  # Use the appropriate version for your project
 
     - name: Build
       run: dotnet build --configuration Release
@@ -32,7 +32,7 @@ jobs:
         key: ${{ secrets.EC2_PRIVATE_KEY }}
         port: ${{ secrets.EC2_PORT }}
         source: 'out/'
-        target: '/path/to/your/remote/directory'
+        target: '/home'
 
     - name: SSH into server and restart application
       uses: appleboy/ssh-action@master
@@ -42,5 +42,5 @@ jobs:
         key: ${{ secrets.EC2_PRIVATE_KEY }}
         port: ${{ secrets.EC2_PORT }}
         script: |
-          cd /path/to/your/remote/directory
+          cd home
           sudo systemctl restart your-application-service
