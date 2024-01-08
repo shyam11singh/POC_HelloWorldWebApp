@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vAMGObRjjMCucKiUxEw8fMIDSnHW9fkoB9uTGiuMjPbb+5LB0fqlH25rkhgCmbczeQ/rdvoK1FBdNDGW0nT4GA==",
+  "dgSpecHash": "CEUiYK3DG+33QPLeahbvK608CMGgVsR2eTMaaHHYZPnatSjc371KJgGJG5VDTldreNEko+3yttHDMsIReUA9dA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\224360\\Documents\\Globelife\\HelloWorldWebApp\\MyWebApp01\\MyWebApp01.csproj",
+  "projectFilePath": "C:\\Users\\224360\\Documents\\Globelife\\HelloWorldWebApp\\POC_HelloWorldWebApp-1\\MyWebApp01\\MyWebApp01.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
