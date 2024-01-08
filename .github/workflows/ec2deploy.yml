@@ -34,6 +34,7 @@ jobs:
         port: ${{ secrets.EC2_PORT }}
         source: 'out/'
         target: '/home'
+        timeout: 90s
 
     - name: SSH into server and restart application
       uses: appleboy/ssh-action@master
