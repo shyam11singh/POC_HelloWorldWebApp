@@ -32,7 +32,7 @@ jobs:
         username: ${{ secrets.EC2_USERNAME }}
         key: ${{ secrets.EC2_PRIVATE_KEY }}
         port: ${{ secrets.EC2_PORT }}
-        source: '.'
+        source: 'test.txt'
         #source: 'out/'
         #source:'.'
         target: '/home'
