@@ -1,4 +1,4 @@
-name: Deploy to AWS EC2 instance 2
+name: Deploy to AWS EC2 instance 3
 
 on:
   push:
