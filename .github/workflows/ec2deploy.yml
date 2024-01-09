@@ -14,11 +14,21 @@ jobs:
     steps:
       - name: Checkout the files
         uses: actions/checkout@v2
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '8.0.x'  # Use the appropriate version for your project
+
+      - name: Build
+        run: dotnet build --configuration Release
+
+      - name: Publish
+        run: dotnet publish -c Release -o out
 
       - name: Deploy to Server 1
         uses: easingthemes/ssh-deploy@main
         with:
-          SOURCE: 'test.txt'
+          SOURCE: '/home/runner/work/POC_HelloWorldWebApp/POC_HelloWorldWebApp/out/'
         #env:
           SSH_PRIVATE_KEY: ${{ secrets.EC2_SSH_KEY }}
           REMOTE_HOST: ${{ secrets.HOST_DNS }}
