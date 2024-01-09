@@ -35,7 +35,8 @@ jobs:
         source: 'test.txt'
         #source: 'out/'
         #source:'.'
-        target: '/home'
+        #target: '/home'
+        target: '/home/ubuntu/dotnetfolder'
         timeout: 90s
 
     - name: SSH into server and restart application
