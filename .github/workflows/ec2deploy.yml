@@ -1,4 +1,4 @@
-name: Push-to-EC2 
+name: Push-to-EC2 on 10th Jan 2023
 
 # Trigger deployment only on push to master branch
 on:
